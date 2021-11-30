@@ -92,7 +92,7 @@ $(document).ready(function() {
     //////////////////////////////End Download Speed /////////////////////////////////
     /////////////////////////////Start Geo location /////////////////////////////////
     $('#checkSpeed').hide()
-    let API_KEY = 'f8a6788cc94740d6b8cf8b482192f832';
+    let API_KEY = '<your api key>';
 
     $.getJSON('https://api.ipgeolocation.io/ipgeo?apiKey=' + API_KEY, function(data) {
     var isp = JSON.stringify(data, null, 2)
@@ -146,7 +146,7 @@ $(document).ready(function() {
         }
 
       Plotly.setPlotConfig({
-        mapboxAccessToken: "pk.eyJ1Ijoid2FkZTEyOSIsImEiOiJja2Q0bW1pYXkxaWszMnFtdHpyNGh6MHBjIn0.T7KO_vcHJuW40biVeCIUGQ"
+        mapboxAccessToken: "<your access token>"
       })
 
       Plotly.newPlot('map', map, layout, config)
